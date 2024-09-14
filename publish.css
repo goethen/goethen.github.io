@@ -1,0 +1,120 @@
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'menu'
+        'main'
+        'footer';
+    grid-template-columns: 1fr;
+    background-color: orange;
+}
+
+header {
+    grid-area: header;
+    padding: 20px;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+#menu {
+    grid-area: menu;
+    padding: 24px;
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+
+#menu nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#main-content {
+    grid-area: main;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+body > header {
+    background-color: rgb(221, 175, 90);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+    box-sizing: border-box; 
+}
+
+#logo {
+    color: rgb(244, 248, 23);
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 2px solid white;
+}
+
+body > main > article{
+    width: 70%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    display: inline-block;
+    transition: background-color 0.4s;
+}
+
+.navbutton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* New styles for list next to the image */
+#main-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#main-content nav { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
